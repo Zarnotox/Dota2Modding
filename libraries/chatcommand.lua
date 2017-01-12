@@ -12,6 +12,7 @@ Usage:
 
 created by Zarnotox
 ]] 
+require('util/split')
 
 ChatCommand = ChatCommand or class({})
 
