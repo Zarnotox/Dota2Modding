@@ -20,10 +20,6 @@ function ChatCommand:constructor()
 end
 
 function ChatCommand:LinkCommand(command, funcName, obj)
-	print("CREATING LINK")
-	print(command)
-	print(funcName)
-	print(obj)
 	self.commands = self.commands or {}
 	self.commands[command] = {funcName, obj}
 end
