@@ -26,9 +26,6 @@ end
 
 function ChatCommand:OnPlayerChat(keys)
 	self.commands = self.commands or {}
-
-	local teamonly = 1
-  	local userID = 1
   	local text = keys.text
 
 	local splitted = split(text, " ")
@@ -37,7 +34,6 @@ function ChatCommand:OnPlayerChat(keys)
 		local loacation = self.commands[splitted[1]]
 		funcName = loacation[1]
 		obj = loacation[2] or self
-
 		obj[funcName](obj, keys)
 	end
 end
